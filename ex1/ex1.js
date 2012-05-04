@@ -35,8 +35,8 @@ function decrypt(data, pass){
 	}
 	toLog('salt from encrypted data:\t'+salt+" (hex: "+salt.toString('hex')+")");
 	var opt = genKeyAndIv(pass, salt);
-	toLog('iv from encrypted data (hex):\t'+opt.iv.toString('hex'));
-	toLog('key from encrypted data (hex):\t'+opt.key.toString('hex'));
+	toLog('iv (hex):\t'+opt.iv.toString('hex'));
+	toLog('key (hex):\t'+opt.key.toString('hex'));
 	var decipher = crypto.createDecipheriv('aes-256-cbc',opt.key.toString('binary'),opt.iv.toString('binary'));
 	data = decipher.update(data,'binary')+decipher.final('binary');
 	if(data.charCodeAt(data.length-1) == 10){
