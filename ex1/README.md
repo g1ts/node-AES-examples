@@ -2,13 +2,13 @@ About this demo
 
 	This demo illustrates AES encryption/decryption on node by using it's crypto module.
 
-NodeJS demo running
+NodeJS demo running:
 
 	`node demo.js <text> <pass>`
 	or
 	`node demo_clean.js <text> <pass>`
 
-OpenSSL equivalent
+OpenSSL equivalent:
 
 	`echo '<text>' | openssl enc -aes-256-cbc -p -a -pass pass:<pass>`
 	(for example: echo 'text' | openssl enc -aes-256-cbc -p -a -pass pass:p)
@@ -16,7 +16,7 @@ OpenSSL equivalent
 	`echo '<encrypted data (in base64)>' | openssl enc -aes-256-cbc -p -a -d -pass pass:<pass>`
 	(for example: echo 'U2FsdGVkX19WG8r7Iy74zv5dCt6L8pB9d7a5hAn+0Ks=' | openssl enc -aes-256-cbc -p -a -d -pass pass:p)
 
-Example of the output data
+Example of the output data:
 
 	$ node demo.js "long text" myPasZw0D
 	
