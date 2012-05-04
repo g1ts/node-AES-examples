@@ -34,7 +34,7 @@ Example of the output data:
 		--- decrypt ---
 	encrypted data (base64):	U2FsdGVkX19lS01TTkpydtZDP2XxCl/nDrgLzIbyb/c=
 	salt from encrypted data:	eKMSNJrv (hex: 654b4d534e4a7276)
-	iv from encrypted data (hex):	7f74e87b2610cced6e19a0b6692e1e2c
-	key from encrypted data (hex):	3b761b5f50b1a5c6bb50ff631257c31ff251f93bf41de540ece20faa4a000bfb
+	iv (hex):	7f74e87b2610cced6e19a0b6692e1e2c
+	key (hex):	3b761b5f50b1a5c6bb50ff631257c31ff251f93bf41de540ece20faa4a000bfb
 	decrypted data (base64):	long text
 		---------------
