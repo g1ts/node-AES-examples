@@ -19,7 +19,7 @@ OpenSSL equivalent:
 
 Example of the output data:
 
-	$ node demo.js "long text" myPasZw0D
+	$ node ex1.js "long text" myPasZw0D
 	
 		data:	long text	(hex: 6c6f6e672074657874)
 		pass:	myPasZw0D	(hex: 6d795061735a773044)
