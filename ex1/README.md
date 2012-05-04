@@ -1,12 +1,13 @@
 About this demo
+=================
 
-	This demo illustrates AES encryption/decryption on node by using it's crypto module.
+This demo illustrates AES encryption/decryption on node by using it's crypto module.
 
 NodeJS demo running:
 
-	`node demo.js <text> <pass>`
+	`node ex1.js <text> <pass>`
 	or
-	`node demo_clean.js <text> <pass>`
+	`node ex1_mini.js <text> <pass>`
 
 OpenSSL equivalent:
 
