@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+
+	<script type="text/javascript" src="js/pidCrypt/pidcrypt_util_c.js"></script>
+	<script type="text/javascript" src="js/pidCrypt/pidcrypt_c.js"></script>
+	<script type="text/javascript" src="js/pidCrypt/md5_c.js"></script><!--needed for key and iv generation-->
+	<script type="text/javascript" src="js/pidCrypt/aes_core_c.js"></script><!--needed block en-/decryption-->
+	<script type="text/javascript" src="js/pidCrypt/aes_cbc_c.js"></script><!--needed for cbc mode-->
+
+	<script type="text/javascript" src="/js/app.js"></script>
+	<script>
+		$(function(){
+			initApp()
+		})
+	</script>
+
+	<title></title>
+</head>
+<body>
+	<div id="page">
+		<div><button id="setKeyBtn">Set key</button> <input id="newKey" type="text"/></div>
+		<div>curent key: <span id="key"></span> (data is encrypted with this key)</div>
+		<div>
+			data:
+			<div>
+				<textarea id="srcData" rows="10" cols="45" name="text">text</textarea>
+				<textarea id="encSrcData" rows="10" cols="45" name="text" disabled="disabled"></textarea>
+			</div>
+			<div><button id="sendData">Send</button></div>
+			data from server:
+			<div>
+				<textarea id="encDataFromServer" rows="10" cols="45" name="text" disabled="disabled"></textarea>
+				<textarea id="decDataFromServer" rows="10" cols="45" name="text" disabled="disabled"></textarea>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
