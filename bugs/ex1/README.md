@@ -1,4 +1,4 @@
-IMHO bug in node_crypto.cc in line 3942
+IMHO bug in node_crypto.cc in line 3942 (https://github.com/joyent/node/blob/master/src/node_crypto.cc#L3942)
 
 	    int dataSize = DH_size(diffieHellman->dh);
 	    char* data = new char[dataSize];
